@@ -47,9 +47,9 @@
 
 .jobTitle {font-family: 'Amatic SC', cursive;
   font-size: 80px;
-  position: absolute;
-  top: 40rem;
-  left: 15rem;
+  position: relative;
+  top: 33rem;
+  right: 35rem;
   -webkit-animation: fadein 6s;
 }
 
@@ -61,9 +61,9 @@
 #meImage {
   height: 325px;
   width: auto;
-  position: absolute;
-  top: 32em;
-  right: 25rem;
+  position: relative;
+  top: 10rem;
+  left: 30rem;
   border-radius: 75px;
 }
 
@@ -135,5 +135,31 @@
   right: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.picture{
+  height: 60vh;
+  width: auto;
+  opacity: .99;
+  position: relative;
+  top: 15rem;
+}
+
+.backArrow {
+  font-size: 50px;
+  position: absolute;
+  top: 42rem;
+  right: 110rem;
+}
+
+.nextArrow {
+  font-size: 50px;
+  position: absolute;
+  left: 110rem;
+  bottom: 34rem;
+}
+
+i:hover {
+  cursor: pointer;
 }
 
