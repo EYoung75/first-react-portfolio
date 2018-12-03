@@ -1,32 +1,139 @@
 .App {
   text-align: center;
+  background-color: #2C5992;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #FBFAF9;
+  height: 7rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  border-right: solid black 2px;
+  border-bottom: solid black 2px;
+  border-left: solid black 2px;
+  border-radius: 0px 0px 20px 20px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lCard {
+  background-color: #FBFAF9;
+  margin-top: 15rem;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  opacity: .6;
+  position: absolute;
+  top: 10rem;
+  border: 2px solid black;
+}
+
+.amaticBrand {
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  position: absolute;
+  top: 30rem;
+  left: 10rem;
+  -webkit-animation: fadein 3s;
+}
+
+.jobTitle {font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  position: absolute;
+  top: 40rem;
+  left: 15rem;
+  -webkit-animation: fadein 6s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#meImage {
+  height: 325px;
+  width: auto;
+  position: absolute;
+  top: 32em;
+  right: 25rem;
+  border-radius: 75px;
+}
+
+.aboutBody {
+  background-color: #FBFAF9;
+  margin-top: 15rem;
+  height: 65vh;
+  width: 100vw;
+  opacity: .6;
+  position: absolute;
+  top: 5rem;
+  border: 2px solid black;
+}
+
+.aboutHead {
+  font-family: 'Amatic SC', cursive;
+  font-size: 75px;
+  opacity: .99;
+  text-align: left;
+  position: relative;
+  top: 12rem;
+  left: 3rem;
+
+}
+
+.aboutContent {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  opacity: .99;
+  text-align: left;
+  position: relative;
+  top: 12rem;
+  left: 1rem;
+  margin: 4rem;
+  right: 1rem;
+}
+
+.projectHead {
+  font-family: 'Amatic SC', cursive;
+  font-size: 75px;
+  opacity: .99;
+  text-align: left;
+  position: relative;
+  top: 12rem;
+  left: 3rem;
+}
+
+.projectContent{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  opacity: .99;
+  text-align: left;
+  position: relative;
+  top: 12rem;
+  left: 1rem;
+  margin: 4rem;
+  right: 1rem;
+}
+
+.contact {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 40px;
+  opacity: .99;
+  text-align: left;
+  position: relative;
+  top: 12rem;
+  left: 1rem;
+  margin: 4rem;
+  right: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
