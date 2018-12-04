@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from "./components/navbar.jsx";
-import Photos from "./components/photos.jsx";
 
 
 class App extends Component {

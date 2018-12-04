@@ -16,12 +16,12 @@
   height: 7rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  border-right: solid black 2px;
-  border-bottom: solid black 2px;
-  border-left: solid black 2px;
+  border-right: solid black .05em;
+  border-bottom: solid black .05em;
+  border-left: solid black .05em;
   border-radius: 0px 0px 20px 20px;
-  font-family: 'Amatic SC', cursive;
-  font-size: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
 }
 
 .lCard {
@@ -34,7 +34,7 @@
   opacity: .6;
   position: absolute;
   top: 10rem;
-  border: 2px solid black;
+  border: .15em solid black;
 }
 
 .amaticBrand {
@@ -80,7 +80,7 @@
 }
 
 .aboutHead {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 75px;
   opacity: .99;
   text-align: left;
@@ -91,9 +91,10 @@
 }
 
 .aboutContent {
-  font-family: 'Cuprum', sans-serif;
-  font-size: 30px;
-  opacity: .99;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  opacity: 1;
+  font-weight: bold;
   text-align: left;
   position: relative;
   top: 12rem;
@@ -103,8 +104,8 @@
 }
 
 .projectHead {
-  font-family: 'Amatic SC', cursive;
-  font-size: 75px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5em;
   opacity: .99;
   text-align: left;
   position: relative;
@@ -113,8 +114,8 @@
 }
 
 .projectContent{
-  font-family: 'Cuprum', sans-serif;
-  font-size: 30px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3em;
   opacity: .99;
   text-align: left;
   position: relative;
@@ -122,6 +123,7 @@
   left: 1rem;
   margin: 4rem;
   right: 1rem;
+  font-weight: bold;
 }
 
 .contact {
@@ -145,16 +147,9 @@
   border-radius: 25px
 }
 
-.backArrow {
-  font-size: 50px;
-}
-
-.nextArrow {
-  font-size: 50px;
-}
-
 i:hover {
   cursor: pointer;
+  font-size: 50px;
 }
 
 .picCarousel {
