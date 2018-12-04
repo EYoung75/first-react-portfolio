@@ -27,32 +27,29 @@ class Photos extends React.Component{
     }
 
     handleBack = (e) => {
-        if(this.state.picCounter > 1) {
-            this.setState({counter: this.state.picCounter -= 1})
-        } else if(this.state.picCounter = 1){
-            this.setState({picCounter: this.state.photos.length})
+        if(this.state.picCounter > 0) {
+            this.setState({picCounter: this.state.picCounter -= 1})
+        } else if(this.state.picCounter === 0){
+            this.setState({picCounter: this.state.photos.length-1})
         }
-        console.log(this.state.picCounter)
     }
+
 
     handleNext = (e) => {
         if(this.state.picCounter < this.state.photos.length -1) {
-            this.setState({counter: this.state.picCounter += 1})
-        } else if(this.state.picCounter  = this.state.photos.length) {
+            this.setState({picCounter: this.state.picCounter += 1})
+        } else if(this.state.picCounter  === this.state.photos.length -1) {
             this.setState({picCounter: 0})
         }
-        console.log(this.state.picCounter)
     }
 
-    render(){
-        const counter = this.state.counter
-        const pic = this.state.photos
+    render() {
         return (
             <div>
                 <div className="aboutBody"></div>
                 <div className="picCarousel">
                     <i onClick={this.handleBack} class="fa fa-chevron-circle-left backArrow" aria-hidden="true"></i>
-                        <img src = {pic[counter]} className="picture"/>
+                        <img src = {this.state.photos[this.state.picCounter]} className="picture"/>
                     <i onClick={this.handleNext} class="fa fa-chevron-circle-right nextArrow" aria-hidden="true"></i>
                 </div>
             </div>
