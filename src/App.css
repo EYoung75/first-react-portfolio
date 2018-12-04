@@ -42,7 +42,7 @@
   font-size: 9rem;
   position: absolute;
   top: 24rem;
-  left: 10rem;
+  left: 8rem;
   -webkit-animation: fadein 3s;
 }
 
@@ -51,7 +51,7 @@
   font-size: 8rem;
   position: relative;
   top: 25rem;
-  right: 22rem;
+  right: 30rem;
   -webkit-animation: fadein 6s;
 }
 
@@ -64,7 +64,7 @@
   height: 35rem;
   width: auto;
   position: relative;
-  top: 26rem;
+  top: 9rem;
   left: 35rem;
   border-radius: 5rem;
 }
@@ -194,3 +194,10 @@ a {
   flex-wrap: nowrap;
 }
 
+.resume {
+  height: 1100px;
+  background-image: white;
+  padding: 5rem;
+  background-image: url("https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  background-size: cover;
+}
