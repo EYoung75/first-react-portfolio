@@ -10,6 +10,7 @@
 .nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
   background-color: #FBFAF9;
   height: 7rem;
@@ -20,7 +21,7 @@
   border-left: solid black 2px;
   border-radius: 0px 0px 20px 20px;
   font-family: 'Amatic SC', cursive;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .lCard {
@@ -141,25 +142,32 @@
   height: 60vh;
   width: auto;
   opacity: .99;
-  position: relative;
-  top: 15rem;
+  border-radius: 25px
 }
 
 .backArrow {
   font-size: 50px;
-  position: absolute;
-  top: 42rem;
-  right: 110rem;
 }
 
 .nextArrow {
   font-size: 50px;
-  position: absolute;
-  left: 110rem;
-  bottom: 34rem;
 }
 
 i:hover {
   cursor: pointer;
 }
+
+.picCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 15rem;
+}
+
+i {
+  padding: 10rem;
+  padding-top: 20rem;
+}
+
 

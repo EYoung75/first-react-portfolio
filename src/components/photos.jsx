@@ -17,21 +17,27 @@ class Photos extends React.Component{
             "https://lh3.googleusercontent.com/fiZyxsLU9fTIFwgx_ki9XiljopYMFt51x7we6gYq8d-FzVQbJgj34Pf-g4n9HKXrEDHaPwPM7K4Ks2qFry8OxWMRfbtlFlRG88ueBKN0mfQvY1Tyqr4ZXbpmdyCOe-nqilXzOBFOuw=w2400",
             "https://lh3.googleusercontent.com/gYM7qnTaEHq6mWPDS-1SwA_ApMpggXc-oozimuDNxmd7MkajjEUJpI_aO0rOek5URJabfN3SnuV5D6CvA20vUAgTH9byjnvh93gpEfHtnMUAodzjKHfnOqcBVnK4YduUledjYS3dcQ=w2400",
             "https://lh3.googleusercontent.com/Ll2268nG9gYzkcf5YFnnjZHXRl8TQ-QBqGqcns1XZ5HoShKeBd7ro4i302ohIt1LNz4_Nn1Hni9oCMa2U5SFUAZkExcuKHO1vu5ReHm2-OvwH-KF4tieFXOIapXMsOl07b1WAzyxzA=w2400",
-            "https://lh3.googleusercontent.com/mLOTeT-T2RNHMNQPJS2ylue78dFOWJGVAQJ9Fu0e9BJySbwwaDtI_OFYuRKTnwucPZK5zpX5EtfzwmZurjxsAXIEk934xjnCX7tpRQfRdQoKO_2ri5dEW7dUQEbAgpVc2nIdDM9lFw=w2400"
+            "https://lh3.googleusercontent.com/mLOTeT-T2RNHMNQPJS2ylue78dFOWJGVAQJ9Fu0e9BJySbwwaDtI_OFYuRKTnwucPZK5zpX5EtfzwmZurjxsAXIEk934xjnCX7tpRQfRdQoKO_2ri5dEW7dUQEbAgpVc2nIdDM9lFw=w2400",
+            "https://lh3.googleusercontent.com/rm4pE09Bwj7VJHkpEq84wjNF92dnPCvmbK7aZmnhLEsbxeWGhH4C0CxcqBwTp4SioA2AlexcyJ-P4HusdDVfd20wXVZHYw1Kh8x39YarQNFzUFPl4oLO5JKouHXYvOgOn8schSHi_A=w2400",
+            "https://lh3.googleusercontent.com/IIv0VLznRU1_V7lntDu1ZorQhcylTa0U-syH8_iDzyhYT_xJDnAO2CuU34d8-oArK0PWqCScEBkDO2wZ4POZlLXFcAxicbPDR42jzNLaHr6py3c2foI1zEUSseQDhzpVHiwEgXTvWw=w2400",
+            "https://lh3.googleusercontent.com/ndY2o3U24PhYGp2sZ34enOgjtq4UuKTjF6pWA867lNUNODLexXNUyABB4dHlU9YuQSzEBJSdN6TW8QY-AwDdHCSbuHMAtuvRC-P6k1AxoIsh5aAlpBT69Uy0y4fDTmoKC6hl5DMrQQ=w2400",
+            "https://lh3.googleusercontent.com/Vp8JB1YhrOdidKcqkrfDaj2-oTFBu7Z9yS_ewgqouk0-tilwTG_TOpbPRQT2Ev5VmFWviGYgRR_u9yAvP3O6j4lRLdEtpaAS9-o-816DfW73_zPknJi8O-85UEjIbysjHicoldOiDg=w2400"
             ]
         }
     }
 
     handleBack = (e) => {
-        if(this.state.picCounter >= 0) {
-            this.setState({counter: this.state.picCounter --})
+        if(this.state.picCounter > 0) {
+            this.setState({counter: this.state.picCounter -= 1})
         }
+        console.log(this.state.picCounter)
     }
 
     handleNext = (e) => {
-        if(this.state.picCounter <= this.state.photos.length) {
-            this.setState({counter: this.state.picCounter ++})
+        if(this.state.picCounter < this.state.photos.length -1) {
+            this.setState({counter: this.state.picCounter += 1})
         }
+        console.log(this.state.picCounter)
     }
 
     render(){
@@ -40,11 +46,11 @@ class Photos extends React.Component{
         return (
             <div>
                 <div className="aboutBody"></div>
-                <i onClick={this.handleBack} class="fa fa-chevron-circle-left backArrow" aria-hidden="true"></i>
-                <div className="picContainer">
-                    <img src = {pic[counter]} className="picture"/>
+                <div className="picCarousel">
+                    <i onClick={this.handleBack} class="fa fa-chevron-circle-left backArrow" aria-hidden="true"></i>
+                        <img src = {pic[counter]} className="picture"/>
+                    <i onClick={this.handleNext} class="fa fa-chevron-circle-right nextArrow" aria-hidden="true"></i>
                 </div>
-                <i onClick={this.handleNext} class="fa fa-chevron-circle-right nextArrow" aria-hidden="true"></i>
             </div>
         )
     }
