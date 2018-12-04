@@ -8,13 +8,19 @@ class Projects extends React.Component {
                 <div className="aboutBody"></div>
                 <div>
                     <h1 className="aboutHead">Projects:</h1>
-                    <ul className="projectContent">
-                        <li>g102 "Yearbook"</li>
-                        <li>React Bookstore</li>
-                        <li>React Inbox</li>
-                        <li>g102 class database</li>
-                        <li>React Shopping Cart</li>
-                    </ul>
+                    <div className="projectContent">
+                        <div className="projectLeft">
+                            <a href="https://g102.herokuapp.com/">•g102 "Yearbook"</a>
+                            <a href="https://github.com/EYoung75/react-bookstore">•React Bookstore</a>
+                            <a href="https://github.com/EYoung75/react-inbox">•React Inbox</a>
+                            <a href="https://github.com/EYoung75/g102">•g102 class database</a>
+                        </div>
+                        <div className="projectRight">
+                            <a href="https://github.com/EYoung75/react-shopping-cart">•React Shopping Cart</a>
+                            <a href="https://github.com/EYoung75/pixel-art">•Pixel Art</a>
+                            <a href="https://github.com/EYoung75/react-quote-generator">•React "Not-so-inspirational" quote generator</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
