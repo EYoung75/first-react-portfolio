@@ -87,7 +87,6 @@
   position: relative;
   top: 12rem;
   left: 3rem;
-
 }
 
 .aboutContent {
@@ -178,4 +177,19 @@ a {
 
 }
 
+.me {
+  height: 35rem;
+  width: auto;
+  opacity: 1;
+  position: relative;
+  top: 12rem;
+  right: 2rem;
+  border-radius: 7rem;
+
+}
+
+.aboutWrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
 

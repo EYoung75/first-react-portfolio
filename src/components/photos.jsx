@@ -27,8 +27,10 @@ class Photos extends React.Component{
     }
 
     handleBack = (e) => {
-        if(this.state.picCounter > 0) {
+        if(this.state.picCounter > 1) {
             this.setState({counter: this.state.picCounter -= 1})
+        } else if(this.state.picCounter = 1){
+            this.setState({picCounter: this.state.photos.length})
         }
         console.log(this.state.picCounter)
     }
@@ -36,6 +38,8 @@ class Photos extends React.Component{
     handleNext = (e) => {
         if(this.state.picCounter < this.state.photos.length -1) {
             this.setState({counter: this.state.picCounter += 1})
+        } else if(this.state.picCounter  = this.state.photos.length) {
+            this.setState({picCounter: 0})
         }
         console.log(this.state.picCounter)
     }
