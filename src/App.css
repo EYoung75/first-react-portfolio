@@ -7,8 +7,6 @@
   background-size: cover;
 }
 
-
-
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +68,7 @@
 .landingImage {
   height: 42vh;
   width: auto;
-  border-radius: 5rem;
+  border-radius: 1rem;
   position: relative;
   top: 4vh;
 }
@@ -110,7 +108,7 @@
 .aboutPicture {
   height: 45vh;
   width: auto;
-  border-radius: 5rem;
+  border-radius: 1rem;
   position: relative;
   top: 10vh;
   right: 1vw;
@@ -154,7 +152,7 @@
 .picture{
   height: 60vh;
   width: auto;
-  border-radius: 5rem;
+  border-radius: 1rem;
 }
 
 i:hover {
