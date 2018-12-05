@@ -7,51 +7,58 @@
   background-size: cover;
 }
 
+
+
 .nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   background-color: #FBFAF9;
-  height: 7rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  height: 8vh;
   border-right: solid black .1rem;
   border-bottom: solid black .1rem;
   border-left: solid black .1rem;
   border-radius: 0rem 0rem 3rem 3rem;
   font-family: 'Cormorant Infant', serif;
-  font-size: 3.5rem;
+  font-size: 4vh;
 }
 
 .lCard {
-  background-color: #FBFAF9;
-  margin-top: 15rem;
+  margin-top: 22vh;
   height: 50vh;
   width: 100vw;
   display: flex;
-  flex-wrap: nowrap;
-  opacity: .6;
-  position: absolute;
-  top: 10rem;
-  border: .15rem solid black;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  top: 12vh;
+  border-top: .15rem solid black;
+  border-bottom: .15rem solid black;
+  background:rgba(255,255,255, 0.6);
+}
+
+.landingText {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1vh;
 }
 
 .amaticBrand {
   font-family: 'Cormorant SC', serif;
-  font-size: 9rem;
-  position: absolute;
-  top: 24rem;
-  left: 8rem;
+  font-size: 10vh;
   -webkit-animation: fadein 3s;
+  position: relative;
+  right: 6vw;
 }
 
 .jobTitle {
   font-family: 'Cormorant SC', serif;
-  font-size: 8rem;
+  font-size: 9vh;
   position: relative;
-  top: 25rem;
-  right: 30rem;
+  bottom: 6vh;
+  left: 1vw;
   -webkit-animation: fadein 6s;
 }
 
@@ -60,98 +67,93 @@
   to   { opacity: 1; }
 }
 
-#meImage {
-  height: 35rem;
+.landingImage {
+  height: 42vh;
   width: auto;
-  position: relative;
-  top: 9rem;
-  left: 35rem;
   border-radius: 5rem;
+  position: relative;
+  top: 4vh;
 }
 
-.aboutBody {
-  background-color: #FBFAF9;
-  margin-top: 15rem;
-  height: 65vh;
+.landingImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutBody, .projectBody {
+  background:rgba(255,255,255, 0.6);
+  font-family: 'Cormorant SC', serif;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  margin-top: 15vh;
+  height: 69vh;
   width: 100vw;
-  opacity: .6;
-  position: absolute;
-  top: 5rem;
-  border: .15rem solid black;
+  border-top: .15rem solid black;
+  border-bottom: .15rem solid black;
+  padding: 1vh;
 }
 
 .aboutHead {
-  font-family: 'Cormorant SC', serif;
-  font-size: 6rem;
-  opacity: 1;
-  text-align: left;
+  font-size: 8vh;
   position: relative;
-  top: 12rem;
-  left: 3rem;
+  bottom: 4vh;
 }
 
 .aboutContent {
-  font-family: 'Cormorant Infant', serif;
-  font-size: 2.5rem;
-  opacity: 1;
-  font-weight: bold;
-  text-align: left;
+  font-size: 3vh; 
+  padding: 2vw;
   position: relative;
-  top: 12rem;
-  left: 1rem;
-  margin: 4rem;
-  right: 1rem;
+  bottom: 2vh;
+}
+
+.aboutPicture {
+  height: 45vh;
+  width: auto;
+  border-radius: 5rem;
+  position: relative;
+  top: 10vh;
+  right: 1vw;
+}
+
+.aboutPictureContainer {
+  display: flex;
 }
 
 .projectHead {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 6rem;
-  opacity: 1;
-  text-align: left;
+  font-size: 8vh;
   position: relative;
-  top: 12rem;
   left: 3rem;
+  bottom: 2vh;
 }
 
 .projectContent{
   font-family: 'Cormorant Infant', serif;
-  font-size: 4rem;
-  opacity: 1;
-  text-align: left;
-  position: relative;
-  top: 12rem;
-  left: 1rem;
-  margin: 4rem;
-  right: 1rem;
-  font-weight: bold;
+  font-size: 5vh;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  position: relative;
+  top: 15vh;
+  right: 5vw;
 }
 
-.projectLeft, .projectRight {
+.projectLinks{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .contact {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 4rem;
-  font-weight: bold;
-  opacity: 1;
+  font-size: 6vh;
   text-align: left;
-  position: relative;
-  top: 12rem;
-  left: 1rem;
-  margin: 4rem;
-  right: 1rem;
   display: flex;
   flex-direction: column;
+  padding-left: 3vw;
 }
 
 .picture{
   height: 60vh;
   width: auto;
-  opacity: 1;
   border-radius: 5rem;
 }
 
@@ -159,23 +161,39 @@ i:hover {
   cursor: pointer;
 }
 
-.picCarousel {
+.pictureGallery {
+  background:rgba(255,255,255, 0.6);
+  font-family: 'Cormorant SC', serif;
+  font-weight: bold;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  top: 15rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 15vh;
+  height: 69vh;
+  width: 100vw;
+  border-top: .15rem solid black;
+  border-bottom: .15rem solid black;
+  padding: 1vh;
 }
 
 i {
-  padding: 10rem;
-  padding-top: 20rem;
   font-size: 5rem;
+  padding: 5vw;
+  position: absolute;
+  top: 40vh;
+}
+
+.iconLeft {
+  right: 80vw;
+}
+
+.iconRight {
+  left: 80vw;
 }
 
 a {
   padding: 1rem;
-
 }
 
 .me {
@@ -186,7 +204,6 @@ a {
   top: 12rem;
   right: 2rem;
   border-radius: 7rem;
-
 }
 
 .aboutWrap {
@@ -200,4 +217,167 @@ a {
   padding: 5rem;
   background-image: url("https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
   background-size: cover;
+}
+
+/*Styling for ~ipad size devices */
+@media (max-width: 991.98px){
+  .App {
+    height: 100vh;
+  }
+  .nav {
+    display: flex;
+    font-size: 2vh;
+  }
+  .lCard {
+    margin-top: 7vh;
+    height: 70vh;
+    justify-content: center;
+  }
+  .amaticBrand {
+    right: 0vw;
+    font-size: 5vh
+  }
+  .jobTitle {
+    font-size: 4vh;
+    bottom: 0vh;
+    left: 0vw;
+  }
+  .landingImage{
+    height: 35vh;
+    top: 0vh;
+  }
+  .aboutBody{
+    margin-top: 5vh;
+    flex-direction: column;
+    height: 65vh;
+  }
+  .aboutPicture {
+    height: 20vh;
+    top: 0vh;
+    left: 50vw;
+  }
+  .aboutHead {
+    font-size: 4vh;
+  }
+  .aboutContent {
+    font-size: 2vh;
+    bottom: 0vh;
+  }
+  .projectHead {
+    font-size: 5vh;
+  }
+  .projectContent {
+    font-size: 3vh;
+    top: 0vh;
+    left: 5vw;
+  }
+  .contact {
+    font-size: 3vh;
+  }
+  .picture {
+    height: 30vh;
+  }
+
+  .pictureGallery {
+    height: 50vh;
+    margin-top: 7vh;
+  }
+
+  i {
+    top: 32vh;
+  }
+
+  .iconLeft {
+    right: 85vw;
+  }
+  
+  .iconRight {
+    left: 85vw;
+  }
+  iframe {
+    height: 800px;
+    width: 600px;
+  }
+}
+
+/* Styling for most mobile devices */
+
+@media (max-width: 767.98px) { 
+  .App {
+    height: 100vh;
+  }
+  .nav {
+    display: flex;
+    font-size: 1.3vh;
+  }
+  .lCard {
+    margin-top: 7vh;
+    height: 70vh;
+    justify-content: center;
+  }
+  .amaticBrand {
+    right: 0vw;
+    font-size: 5vh
+  }
+  .jobTitle {
+    font-size: 4vh;
+    bottom: 0vh;
+    left: 0vw;
+  }
+  .landingImage{
+    height: 30vh;
+  }
+  .aboutBody{
+    margin-top: 5vh;
+    flex-direction: column;
+    height: 75vh;
+  }
+  .aboutPicture {
+    height: 20vh;
+    top: 0vh;
+    left: 30vw;
+  }
+  .aboutHead {
+    font-size: 4vh;
+  }
+  .aboutContent {
+    font-size: 2vh;
+    bottom: 0vh;
+  }
+  .projectHead {
+    font-size: 5vh;
+  }
+  .projectContent {
+    font-size: 2vh;
+    top: 0vh;
+  }
+  .contact {
+    font-size: 3vh;
+  }
+  .picture {
+    height: 20vh;
+    border-radius: 3rem;
+  }
+
+  .pictureGallery {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+
+  i {
+    top: 35vh;
+  }
+
+  .iconLeft {
+    right: 77vw;
+  }
+  
+  .iconRight {
+    left: 77vw;
+  }
+  iframe {
+    height: 550px;
+    width: 300px;
+  }
+
 }

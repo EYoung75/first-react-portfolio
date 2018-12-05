@@ -15,7 +15,7 @@ class Navbar extends React.Component{
         return(
             <Router>
                 <div>
-                    <nav className="nav">
+                    <nav className="nav container">
                         <li className="navLink"><Link to="/">{"<EJY/>"}</Link></li>
                         <li className="navLink"><Link to="/about">About</Link></li>
                         <li className="navLink"><Link to="/projects">Projects</Link></li>
