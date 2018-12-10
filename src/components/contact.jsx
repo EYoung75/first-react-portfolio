@@ -12,7 +12,7 @@ class Contact extends React.Component {
                         <a href="https://www.linkedin.com/in/evanyoung4/">•LinkedIn: linkedin.com/in/evanyoung4/</a>
                         <a href="https://github.com/EYoung75">•GitHub: github.com/EYoung75</a>
                         <a href="mailto:Young.EvanJ@gmail.com">•Email: Young.EvanJ@gmail.com</a>
-                        <a href="#">•Phone: (720)224-6718</a>
+                        <a href="blank">•Phone: (720)224-6718</a>
                     </div>
                 </div>
             </div>

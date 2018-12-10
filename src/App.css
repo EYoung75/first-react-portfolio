@@ -22,7 +22,7 @@
   font-family: 'Cormorant Infant', serif;
   font-size: 4vh;
 }
-
+/* Home styling */
 .lCard {
   margin-top: 22vh;
   height: 50vh;
@@ -78,7 +78,9 @@
   flex-wrap: wrap;
 }
 
-.aboutBody, .projectBody {
+/* About styling */
+
+.aboutBody{
   background:rgba(255,255,255, 0.6);
   font-family: 'Cormorant SC', serif;
   text-align: left;
@@ -118,11 +120,27 @@
   display: flex;
 }
 
+/* Projects styling */
+
 .projectHead {
   font-size: 8vh;
   position: relative;
   left: 3rem;
   bottom: 2vh;
+}
+
+.projectBody {
+  background:rgba(255,255,255, 0.6);
+  font-family: 'Cormorant SC', serif;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  margin-top: 15vh;
+  height: 69vh;
+  width: 100vw;
+  border-top: .15rem solid black;
+  border-bottom: .15rem solid black;
+  padding: 1vh;
 }
 
 .projectContent{
@@ -140,6 +158,8 @@
   flex-direction: column;
 }
 
+/* Contact styling */
+
 .contact {
   font-family: 'Cormorant Garamond', serif;
   font-size: 6vh;
@@ -148,6 +168,8 @@
   flex-direction: column;
   padding-left: 3vw;
 }
+
+/* Picture galler styling */
 
 .picture{
   height: 60vh;
@@ -190,23 +212,10 @@ i {
   left: 80vw;
 }
 
+
+
 a {
   padding: 1rem;
-}
-
-.me {
-  height: 35rem;
-  width: auto;
-  opacity: 1;
-  position: relative;
-  top: 12rem;
-  right: 2rem;
-  border-radius: 7rem;
-}
-
-.aboutWrap {
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .resume {

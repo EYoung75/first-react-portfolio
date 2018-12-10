@@ -14,7 +14,7 @@ class About extends React.Component {
                     </p>
                 </div>
                 <div className="aboutPictureContainer">
-                    <img className="aboutPicture" src="https://lh3.googleusercontent.com/hqUmfCLWAd4LDqyfqv9DQPJCI18MfwR3NiIpU6Cc0VLFojEnCQi1PDjlX6k0y1KdMiM_mlvmc2_3cEx0fvflH2B-R17rE0MpFe_4ZDtrewj9NvxN7fjlt4x10hWxmsIAmPCp7O1rUw=w2400"></img>
+                    <img className="aboutPicture" src="https://lh3.googleusercontent.com/hqUmfCLWAd4LDqyfqv9DQPJCI18MfwR3NiIpU6Cc0VLFojEnCQi1PDjlX6k0y1KdMiM_mlvmc2_3cEx0fvflH2B-R17rE0MpFe_4ZDtrewj9NvxN7fjlt4x10hWxmsIAmPCp7O1rUw=w2400" alt="Very professional with Lambchop the dog"></img>
                 </div>
             </div>
         )

@@ -47,9 +47,9 @@ class Photos extends React.Component {
         return (
             <div className="pictureGallery container-fluid">
                 <div>
-                    <i onClick={this.handleBack} class="fa fa-chevron-circle-left iconLeft" aria-hidden="true"></i>
-                    <img src={this.state.photos[this.state.picCounter]} className="picture" />
-                    <i onClick={this.handleNext} class="fa fa-chevron-circle-right iconRight" aria-hidden="true"></i>
+                    <i onClick={this.handleBack} className="fa fa-chevron-circle-left iconLeft" aria-hidden="true"></i>
+                    <img src={this.state.photos[this.state.picCounter]} className="picture" alt="EYoung"/>
+                    <i onClick={this.handleNext} className="fa fa-chevron-circle-right iconRight" aria-hidden="true"></i>
                 </div>
             </div>
         )
