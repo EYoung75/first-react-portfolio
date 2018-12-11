@@ -3,7 +3,6 @@ import "../App.css";
 
 const Contact = () => {
     return (
-
         <div className="aboutBody container-fluid">
             <div>
                 <h1 className="projectHead">Points of Contact:</h1>
