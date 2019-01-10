@@ -220,11 +220,14 @@ a {
 
 .resume {
   height: 1100px;
+  display: flex;
+  flex-direction: column;
   background-image: white;
   padding: 5rem;
   background-image: url("https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
   background-size: cover;
 }
+
 
 /*Styling for ~ipad size devices */
 @media (max-width: 991.98px){
@@ -301,10 +304,7 @@ a {
   .iconRight {
     left: 85vw;
   }
-  iframe {
-    height: 800px;
-    width: 600px;
-  }
+  
 }
 
 /* Styling for most mobile devices */
@@ -332,7 +332,8 @@ a {
     left: 0vw;
   }
   .landingImage{
-    height: 30vh;
+    height: 35vh;
+    width: 100%;
   }
   .aboutBody{
     margin-top: 5vh;
@@ -362,29 +363,56 @@ a {
     font-size: 3vh;
   }
   .picture {
-    height: 20vh;
+    height: 40vh;
     border-radius: 3rem;
   }
 
   .pictureGallery {
-    height: 50vh;
+    height: 60vh;
     margin-top: 10vh;
   }
 
   i {
-    top: 35vh;
+    top: 68vh;
   }
 
   .iconLeft {
-    right: 77vw;
+    right: 60vw;
   }
   
   .iconRight {
-    left: 77vw;
+    left: 60vw;
   }
   iframe {
-    height: "80%";
-    width: "80%";
+    visibility: hidden
   }
+  button {
+    color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: blue;
+    height: 10vh;
+    width: 40vw;
+  }
+  .nav {
+    height: 10vh;
+    font-size: 2vh;
+  }
+
+  /* .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FBFAF9;
+    height: 8vh;
+    border-right: solid black .1rem;
+    border-bottom: solid black .1rem;
+    border-left: solid black .1rem;
+    border-radius: 0rem 0rem 3rem 3rem;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 4vh;
+  } */
 
 }
