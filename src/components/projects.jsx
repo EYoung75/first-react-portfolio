@@ -7,15 +7,10 @@ const Projects = () => {
             <h1 className="projectHead">Projects:</h1>
             <div className="projectContent">
                 <div className="projectLinks">
-                    <a href="https://g102.herokuapp.com/">•g102 "Yearbook"</a>
-                    <a href="https://github.com/EYoung75/react-bookstore">•React Bookstore</a>
-                    <a href="https://github.com/EYoung75/react-inbox">•React Inbox</a>
-                    <a href="https://github.com/EYoung75/g102">•g102 class database</a>
-                </div>
-                <div className="projectLinks">
-                    <a href="https://github.com/EYoung75/react-shopping-cart">•React Shopping Cart</a>
+                    <a href="https://github.com/EYoung75/petSwipe-native">•PetSwipe React Native</a>
+                    <a href="http://evan-omdb.surge.sh/">•React Movie Reviews</a>
+                    <a href="http://g-102-eats.surge.sh/">•Galvanize Eats</a>
                     <a href="https://github.com/EYoung75/pixel-art">•Pixel Art</a>
-                    <a href="https://github.com/EYoung75/react-quote-generator">•React "Not-so-inspirational" quote generator</a>
                 </div>
             </div>
         </div>

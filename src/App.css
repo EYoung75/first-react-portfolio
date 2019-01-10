@@ -383,8 +383,8 @@ a {
     left: 77vw;
   }
   iframe {
-    height: 550px;
-    width: 300px;
+    height: "80%";
+    width: "80%";
   }
 
 }
