@@ -169,7 +169,7 @@
   padding-left: 3vw;
 }
 
-/* Picture galler styling */
+/* Picture gallery styling */
 
 .picture{
   height: 60vh;
@@ -332,8 +332,8 @@ a {
     left: 0vw;
   }
   .landingImage{
-    height: 35vh;
-    width: 100%;
+    height: 30rem;
+    width: auto;
   }
   .aboutBody{
     margin-top: 5vh;
@@ -356,7 +356,7 @@ a {
     font-size: 5vh;
   }
   .projectContent {
-    font-size: 2vh;
+    font-size: 5vh;
     top: 0vh;
   }
   .contact {
@@ -373,15 +373,15 @@ a {
   }
 
   i {
-    top: 68vh;
+    top: 68%;
   }
 
   .iconLeft {
-    right: 60vw;
+    right: 50%;
   }
   
   .iconRight {
-    left: 60vw;
+    left: 50%;
   }
   iframe {
     visibility: hidden
@@ -397,6 +397,10 @@ a {
   .nav {
     height: 10vh;
     font-size: 2vh;
+  }
+
+  #resume {
+    visibility: hidden
   }
 
   /* .nav {

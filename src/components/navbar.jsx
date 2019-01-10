@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li className="navLink"><Link to="/about">About</Link></li>
                     <li className="navLink"><Link to="/projects">Projects</Link></li>
                     <li className="navLink"><Link to="/photo-gallery">Photo Gallery</Link></li>
-                    <li className="navlink"><Link to="/resume">Resume</Link></li>
+                    <li className="navlink" id="resume"><Link to="/resume">Resume</Link></li>
                     <li className="navLink"><Link to="/contact">Contact</Link></li>
                 </nav>
                 <Route path="/" exact component={Home} />
