@@ -22,6 +22,10 @@
   font-family: 'Cormorant Infant', serif;
   font-size: 4vh;
 }
+
+.hamContainer{
+  display: none;
+}
 /* Home styling */
 .lCard {
   margin-top: 22vh;
@@ -312,28 +316,23 @@ a {
 @media (max-width: 767.98px) { 
   .App {
     height: 100vh;
-  }
-  .nav {
-    display: flex;
-    font-size: 1.3vh;
+    width: 100vw;
+    margin: 0;
   }
   .lCard {
-    margin-top: 7vh;
     height: 70vh;
+    width: 100vw;
     justify-content: center;
   }
   .amaticBrand {
-    right: 0vw;
     font-size: 5vh
   }
   .jobTitle {
     font-size: 4vh;
-    bottom: 0vh;
-    left: 0vw;
   }
   .landingImage{
-    height: 30rem;
-    width: auto;
+    height: 25rem;
+    width: 100vw;
   }
   .aboutBody{
     margin-top: 5vh;
@@ -395,28 +394,53 @@ a {
     width: 40vw;
   }
   .nav {
-    height: 10vh;
-    font-size: 3vh;
+    display: none;
   }
 
   #resume {
     visibility: hidden
   }
 
-  /* .nav {
+  .hamContainer {
+    margin-top: 0rem;
+    height: 20vh;
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #FBFAF9;
+    justify-content: space-between;
+    background-color: #74869B;
     height: 8vh;
-    border-right: solid black .1rem;
-    border-bottom: solid black .1rem;
-    border-left: solid black .1rem;
-    border-radius: 0rem 0rem 3rem 3rem;
-    font-family: 'Cormorant Infant', serif;
-    font-size: 4vh;
-  } */
+    align-items: center;
+  }
 
+    .hamburger {
+        font-size: 3em;
+        cursor: pointer;
+        height: 1em;
+        margin-bottom: 2vh;
+        margin-left: 2vw;
+    }
+
+    .menu {
+        position: absolute;
+        height: 22vh;
+        width: 100vw;
+        top: 8vh;
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #8598B0;
+        margin-left: 0;
+        border-bottom: solid black .1rem;
+        z-index: 1;
+    }
+        a {
+            font-size: 3vh;
+            width: 3vw;
+            padding: .5vh;
+            text-decoration: none;
+            color: #2F5279;
+            cursor: pointer;
+        }
+    
 }
